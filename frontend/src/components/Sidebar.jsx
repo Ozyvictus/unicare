@@ -10,9 +10,9 @@ import logo from "../assets/logo.png";
 
 const Sidebar_Data = [
 	{ title: "Home", icon: <HomeIcon />, link: "/home" },
-	{ title: "Accident Report", icon: <ReportIcon />, link: "/booking" },
+	{ title: "Accident Report", icon: <ReportIcon />, link: "/accident" },
 	{ title: "Profile", icon: <AccountCircleIcon />, link: "/profile" },
-	{ title: "Appointment", icon: <MedicalServicesIcon />, link: "/appointments" },
+	{ title: "Appointment", icon: <MedicalServicesIcon />, link: "/booking" },
 	{ title: "Medicine Request", icon: <HealingIcon />, link: "/medicine-request" },
 ];
 
