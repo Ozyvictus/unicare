@@ -9,11 +9,11 @@ import HealingIcon from '@mui/icons-material/Healing';
 import logo from "../assets/logo.png";
 
 const Sidebar_Data = [
-	{ title: "Home", icon: <HomeIcon color='action' />, link: "/home" },
-	{ title: "Accident Report", icon: <ReportIcon color='action' />, link: "/accident" },
-	{ title: "Profile", icon: <AccountCircleIcon color='action' />, link: "/profile" },
-	{ title: "Appointment", icon: <MedicalServicesIcon color="action" />, link: "/booking" },
-	{ title: "Medicine Request", icon: <HealingIcon color="action" />, link: "/medicine-request" },
+	{ title: "Home", icon: <HomeIcon color='auction' />, link: "/home" },
+	{ title: "Accident Report", icon: <ReportIcon color='auction' />, link: "/accident" },
+	{ title: "Profile", icon: <AccountCircleIcon color='auction' />, link: "/profile" },
+	{ title: "Appointment", icon: <MedicalServicesIcon color="auction" />, link: "/booking" },
+	{ title: "Medicine Request", icon: <HealingIcon color="auction" />, link: "/medicine-request" },
 ];
 
 function Sidebar() {

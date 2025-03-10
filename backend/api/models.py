@@ -60,3 +60,27 @@ class Disease(models.Model):
     description = models.TextField()
     user = models.ForeignKey(
         to=MedicalProfile, related_name="disease", on_delete=models.CASCADE)
+
+
+class Appointments(models.Model):
+    GENERAL_CHECKUP = "GC"
+    SPECIAL_CON = "SC"
+    FOLLOWUP = "FU"
+    VACCINATION = "VC"
+    PRESCRIPTIONREN = "PRS"
+    LABTEST = "LT"
+    OTHER = "OTH"
+    CONSULTATION_TYPE = [
+        (GENERAL_CHECKUP, "General Check-up"),
+        (SPECIAL_CON, "Specialist Consultation"),
+        (FOLLOWUP, "Follow-up Visit"),
+        (VACCINATION, "Vaccination"),
+        (PRESCRIPTIONREN, "Prescription Renewal"),
+        (LABTEST, "Laboratory Tests"),
+        (OTHER, "Other")
+    ]
+    date = models.DateTimeField(auto_now_add=True)
+    time = models.CharField(max_length=50)
+    consultation = models.CharField(choices=CONSULTATION_TYPE)
+    user = models.ForeignKey(
+        to=MedicalProfile, related_name="appointments", on_delete=models.CASCADE)
