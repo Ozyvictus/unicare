@@ -1,15 +1,15 @@
 import react from "react"
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
-import Login from "./pages/Login"
-import Register from "./pages/Register"
-import Home from "./pages/Home"
-import NotFound from "./pages/NotFound"
+import Login from "./pages/Login.jsx"
+//import Register from "./pages/Register"
+import Home from "./pages/Home.jsx"
+//import NotFound from "./pages/NotFound"
 import Profile from "./pages/Profile.jsx"
-import ProtectedRoute from "./components/ProtectedRoute"
+import ProtectedRoute from "./components/ProtectedRoutes"
 
 function Logout() {
 	localStorage.clear()
-	return <Navigate to="/login" />
+	return <Navigate to="/" />
 }
 
 function RegisterAndLogout() {
@@ -30,9 +30,17 @@ function App() {
 						</ProtectedRoute>
 					}
 				/>
-				<Route path="/logout" element={<Logout />} />
+				<Route
+					path="/profile"
+					element={
+						<ProtectedRoute>
+							<Profile />
+						</ProtectedRoute>
+					}
+				/>
+				{/*<Route path="/logout" element={<Logout />} />
 				<Route path="/register" element={<RegisterAndLogout />} />
-				<Route path="*" element={<NotFound />}></Route>
+				<Route path="*" element={<NotFound />}></Route>*/}
 			</Routes>
 		</BrowserRouter>
 	)

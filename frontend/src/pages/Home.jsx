@@ -10,7 +10,7 @@ import Footer from '../components/footer';
 
 function Home() {
   const [activeMenuItem, setActiveMenuItem] = useState('home');
-  
+
   return (
     <div className="app">
       <div className="main-content">
