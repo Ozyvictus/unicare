@@ -734,15 +734,22 @@ body {
   bottom: -50px;
   left: 30%;
 }
-
+/* Login Section */
+.login-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 /* Auth Section */
 .auth-section {
   width: 50%;
+  min-height: 135vh;
+  height: 100%;
   background-color: var(--white);
-  padding: 40px;
+  padding: 0px;
+  margin: 0px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   position: relative;
   overflow: hidden;
 }
@@ -786,7 +793,7 @@ body {
 }
 
 .form-container {
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .form-group {
@@ -794,7 +801,7 @@ body {
   position: relative;
 }
 
-.form-group label {
+.form-group label {2
   display: block;
   font-size: 14px;
   color: var(--text-dark);
