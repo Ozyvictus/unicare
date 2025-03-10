@@ -93,18 +93,6 @@ body {
   gap: 20px;
 }
 
-.notifications {
-  position: relative;
-}
-
-.notification-icon {
-  display: block;
-  width: 18px;
-  height: 18px;
-  background-color: #ddd;
-  border-radius: 50%;
-}
-
 .user-profile {
   display: flex;
   align-items: center;
