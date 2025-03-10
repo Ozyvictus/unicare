@@ -5,6 +5,7 @@ import Login from "./pages/Login.jsx"
 import Home from "./pages/Home.jsx"
 //import NotFound from "./pages/NotFound"
 import Profile from "./pages/Profile.jsx"
+import AppointmentBookingForm from "./pages/appointment_booking.jsx"
 import ProtectedRoute from "./components/ProtectedRoutes"
 
 function Logout() {
@@ -35,6 +36,14 @@ function App() {
 					element={
 						<ProtectedRoute>
 							<Profile />
+						</ProtectedRoute>
+					}
+				/>
+				<Route
+					path="/booking"
+					element={
+						<ProtectedRoute>
+							<AppointmentBookingForm />
 						</ProtectedRoute>
 					}
 				/>
