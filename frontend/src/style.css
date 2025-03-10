@@ -433,6 +433,7 @@ body {
 
 .main-content {
   margin: 30px;
+  overflow-x: hidden;
   flex: 1;
 }
 
