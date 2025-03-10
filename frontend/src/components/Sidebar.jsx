@@ -21,7 +21,7 @@ const Sidebar_Data = [
 	{
 		title: "Profile",
 		icon: <AccountCircleIcon color="auction" />,
-		link: "/home",
+		link: "/profile",
 	},
 	{
 		title: "Appointment",
