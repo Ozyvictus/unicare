@@ -4,17 +4,12 @@ import '../style.css'
 const NoticesSection = () => {
   return (
     <div className="notices-section">
-      <div className="notices-overlay"></div>
-      <div className="circle-decoration circle-1"></div>
-      <div className="circle-decoration circle-2"></div>
-      <div className="circle-decoration circle-3"></div>
-
       <div className="notices-content">
         <div className="logo">
-          <div className="logo-circle">
-            <div className="logo-icon"></div>
+          <div className="notice-logo-circle">
+		<img src={logo} alt="Unicare" className="notice-logo-icon" />
           </div>
-          <div className="logo-text">UniHealth</div>
+          <div className="logo-text">Unicare</div>
         </div>
 
         <h1 className="notices-title">University Healthcare Notices</h1>

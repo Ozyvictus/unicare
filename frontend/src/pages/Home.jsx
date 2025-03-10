@@ -7,12 +7,14 @@ import EmergencySection from '../components/emergency';
 import PharmacySection from '../components/pharmacy';
 import MentalHealthSection from '../components/mentalhealth';
 import Footer from '../components/footer';
+import Sidebar from '../components/Sidebar';
 
 function Home() {
   const [activeMenuItem, setActiveMenuItem] = useState('home');
 
   return (
     <div className="app">
+	<Sidebar />
       <div className="main-content">
         <NotificationBanner />
         <HeroSection />
