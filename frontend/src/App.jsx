@@ -25,13 +25,17 @@ function App() {
 				<Route
 					path="/home"
 					element={
-						<Home />
+						<ProtectedRoute>
+							<Home />
+						</ProtectedRoute>
 					}
 				/>
 				<Route
 					path="/profile"
 					element={
-						<Profile />
+						<ProtectedRoute>
+							<Profile />
+						</ProtectedRoute>
 					}
 				/>
 				{/*<Route path="/logout" element={<Logout />} />

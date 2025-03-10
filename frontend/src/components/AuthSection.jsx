@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import api from "../api";
 import { ACCESS_TOKEN, REFRESH_TOKEN } from "../constants";
 import RegisterForm from './RegisterForm'; // Ensure RegisterForm is imported
-import '../style.css';
+import '../auth.css';
 
 const AuthSection = () => {
   const [activeTab, setActiveTab] = useState('login');
