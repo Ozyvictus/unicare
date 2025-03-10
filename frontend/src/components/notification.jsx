@@ -1,5 +1,5 @@
 import React from 'react';
-import './NotificationBanner.css';
+import '../style.css';
 
 function NotificationBanner() {
   const notifications = [

@@ -1,20 +1,18 @@
 import React, { useState } from 'react';
-import './App.css';
-import Sidebar from './components/Sidebar';
-import NotificationBanner from './components/NotificationBanner';
-import HeroSection from './components/HeroSection';
-import AppointmentSection from './components/AppointmentSection';
-import EmergencySection from './components/EmergencySection';
-import PharmacySection from './components/PharmacySection';
-import MentalHealthSection from './components/MentalHealthSection';
-import Footer from './components/Footer';
+import '../style.css';
+import NotificationBanner from '../components/notification';
+import HeroSection from '../components/hero';
+import AppointmentSection from '../components/appointments';
+import EmergencySection from '../components/emergency';
+import PharmacySection from '../components/pharmacy';
+import MentalHealthSection from '../components/mentalhealth';
+import Footer from '../components/footer';
 
-function App() {
+function Home() {
   const [activeMenuItem, setActiveMenuItem] = useState('home');
   
   return (
     <div className="app">
-      <Sidebar activeMenuItem={activeMenuItem} setActiveMenuItem={setActiveMenuItem} />
       <div className="main-content">
         <NotificationBanner />
         <HeroSection />
@@ -28,4 +26,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
