@@ -1,9 +1,9 @@
 import React from 'react';
-import Home from './pages/Home.jsx';
+import Profile from './pages/Profile.jsx';
 
 function App() {
 	return (
-	<div> <Home /> </div>
+	<div> <Profile /> </div>
 	);
 };
 
