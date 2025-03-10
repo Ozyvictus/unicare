@@ -4,7 +4,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ReportIcon from '@mui/icons-material/Report';
 import HomeIcon from '@mui/icons-material/Home';
 import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
-import PsychologyIcon from '@mui/icons-material/Psychology';
+import HealingIcon from '@mui/icons-material/Healing';
 const Sidebar_Data = [
 	{
 		title: "Home",
@@ -27,8 +27,8 @@ const Sidebar_Data = [
 		link: "/home",
 	},
 	{
-		title: "Mental Health",
-		icon: <PsychologyIcon color="auction" />,
+		title: "Medicine Request",
+		icon: <HealingIcon color="auction" />,
 		link: "/home",
 	},
 ];
