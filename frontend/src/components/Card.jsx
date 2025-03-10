@@ -6,10 +6,10 @@ function Card() {
             <div className="patient-card">
               <div className="patient-profile">
                 <div className="patient-avatar">
-                  <img src="/api/placeholder/100/100" alt="Patient" />
+                  <img src="https://avatar.iran.liara.run/public/44" alt="Patient" />
                 </div>
                 <h3 className="patient-name">Roger Curtis</h3>
-                <p className="patient-age">Age: 36</p>
+                <p className="patient-age">Age: 19</p>
                 <button className="update-btn">Update</button>
               </div>
               
@@ -34,8 +34,8 @@ function Card() {
                   <div className="info-label">Weight:</div>
                   <div className="info-value">65 kg</div>
                   
-                  <div className="info-label">Patient ID:</div>
-                  <div className="info-value">2084961786</div>
+                  <div className="info-label">SRMIST ID:</div>
+                  <div className="info-value">RA2311043010094</div>
                   
                   <div className="info-label">Last Visit:</div>
                   <div className="info-value">25th October 2019</div>
