@@ -5,6 +5,8 @@ import ReportIcon from '@mui/icons-material/Report';
 import HomeIcon from '@mui/icons-material/Home';
 import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
 import HealingIcon from '@mui/icons-material/Healing';
+import logo from "../assets/logo.png";
+
 const Sidebar_Data = [
 	{
 		title: "Home",
@@ -38,6 +40,7 @@ function Sidebar() {
 		<aside className="sidebar">
 			<div className="logo">
 				<div className="logo-circle">
+				<img src={logo} alt="Unicare" className="logo-icon" />
 				</div>
 				</div>
 				<div className="sidebar-nav">
