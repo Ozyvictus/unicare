@@ -38,8 +38,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-Appointment}
-
+}
 .logo-icon {
   width: 20px;
   height: 20px;
@@ -69,7 +68,7 @@ Appointment}
 /* Main Content Styles */
 .main-content {
   flex: 1;
-  padding: 20px;
+  padding: 10px;
 }
 
 /* Header Styles */
@@ -450,7 +449,7 @@ body {
 }
 
 .main-content {
-  margin-left: 280px;
+  margin: 30px;
   flex: 1;
 }
 
